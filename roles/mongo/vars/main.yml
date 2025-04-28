@@ -1,1 +1,2 @@
 component: mongo
+secrets: "{{ lookup('hashi_vault', 'secret=roboshop-{{env}}/data/mongodb token={{vault_token}} url=http://vault-internal.devrobo.online:8200 ')}}"
